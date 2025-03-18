@@ -6,6 +6,10 @@ const PORT = process.env.PORT || 3000;
 // Middleware para manejar JSON
 app.use(express.json());
 
+app.get("/", (req, res) => {
+    res.send("API de gestión de tareas funcionando ✅");
+});
+
 // Variables y constantes
 const tasks = [];
 const MAX_TASKS = 5;
@@ -60,3 +64,5 @@ app.listen(PORT, () => {
 
 // Exportar app para despliegue en Vercel
 module.exports = app;
+
+
