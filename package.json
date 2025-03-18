@@ -1,0 +1,15 @@
+{
+  "name": "task-api",
+  "version": "1.0.0",
+  "description": "API simple de gestión de tareas",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "TuNombreCompai",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "task-api": "file:"
+  }
+}
